@@ -13,6 +13,13 @@ The folowing commands are implimeted in a basic sense, and follow similar conven
 * cp
 * rm
 * cat
+* exit
+
+## File Input
+If the program is run as `simple-shell f:<inputfile>`, then the program will execute the commands in that file, and send the output to a file called "output.txt". 
+
+## Multiple commands
+Commands can be sequenced by adding a ";" between them, as in other shells. example: `mkdir ./test ; cd ./test`.
 
 ## Additional Notes
 Each command only takes the basic inputs, and there is no support for flags. For example, `rm /target/directory` will work, but `rm -r /target/directory` is an unsupported function and will throw an error. 
